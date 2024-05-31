@@ -1,0 +1,28 @@
+<div class="col-container">
+	<aside class="col">
+	Sidebar
+	</aside>
+	
+	<div class="col main">
+	Main Content Area
+	</div>
+</div>
+<style>
+.col-container{
+background: blue;
+color: white;
+}
+.col-container:after{
+content: ' ';
+clear: both;
+display: block;
+}
+.col{
+float: left;
+width: 50%;
+}
+.col.main{
+background: red;
+}
+</style>
+// màu của thằng aside = màu của col-container. sau đó định dạng lại màu của thằng main col.
